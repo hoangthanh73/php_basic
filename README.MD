@@ -30,4 +30,4 @@ git push
 git push origin main
 ```
 ## Bài tập
-[danh sách bài tập](https://github.com/hoangthanh73/php_basic/exercise)
+[danh sách bài tập](https://github.com/hoangthanh73/php_basic/tree/main/exercise)
