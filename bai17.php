@@ -21,3 +21,4 @@ else ($delta = ($b * $b) - 4 * $a * $c);
         'x1 = '.(-$b - sqrt($delta)) / (2 * $a).'<br/>'.
         'x2 = '.(-$b + sqrt($delta)) / (2 * $a);
     }
+    
