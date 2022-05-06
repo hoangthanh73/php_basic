@@ -2,32 +2,43 @@
 // tính số ngày các tháng trong năm
 /* tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày
    tháng 4, 6, 9, 11 có 30 ngày
-   tháng 2 năm nhuận có 29 ngày còn lại 28 ngày
-   năm nhuận là năm maf lấy số năm chia cho 19 có lượng dư là 0, 3, 6, 9, 11, 14, 17
+   tháng 2 năm nhuận có 29 ngày, còn lại 28 ngày
+   năm nhuận là năm chia hết cho 4, riêng với những năm tròn thế kỷ thì chia hết cho 400
 */
-$month = 26;
-$year = 2022;
-$check = $year % 19;
-if ($month > 12 || $month < 1) {
-    echo 'giá trị của tháng không hợp lệ';
-} else {
+
+
+
+function ham_tinh_so_ngay_cac_thang_trong_nam($month, $year)
+{
     switch ($month) {
         case 4:
         case 6:
         case 9:
         case 11:
-            echo "tháng $month của $year có 30 ngày";
-            break;
+            return "30 ngày";
         case 2:
-            if ($check == 0 || $check == 3 || $check == 6 || $check == 9 || $check == 11 || $check == 14 || $check == 17) {
-                echo "tháng $month của $year có 29 ngày";
-                break;
+            if ($year % 100 != 0) {
+                if ($year % 4 == 0) {
+                    return "29 ngày";
+                } {
+                    return "28 ngày";
+                }
             } else {
-                echo "tháng $month của $year có 28 ngày";
-                break;
+                if ($year % 400 == 0) {
+                    return "29 ngày";
+                } {
+                    return "28 ngày";
+                }
             }
         default:
-            echo "tháng $month của năm $year có 31 ngày";
-            break;
+            return "31 ngày";
     }
 }
+
+$check = array(
+    'month' => 2,
+    'year' => 2013
+);
+
+echo "tháng $check[month] của năm $check[year] có: ";
+echo ham_tinh_so_ngay_cac_thang_trong_nam($check['month'], $check['year']);

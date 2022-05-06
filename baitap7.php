@@ -1,13 +1,13 @@
 <?php
-// tìm các số 4 chữ số lớn hơn n chia hết cho 7
+// tìm các số 2 chữ số lớn hơn n chia hết cho 7
 
-$n = 1000;
+$n = 10;
 $result = [];
 
-if ($n < 1000 || $n > 9999) {
+if ($n < 10 || $n > 99) {
     echo 'giá trị không thỏa mãn điều kiện';
 } else {
-    for ($i = 1000; $i < 10000; $i++) {
+    for ($i = 10; $i < 100; $i++) {
         if ($i % 7 == 0) {
             $result[] = $i;
         }
