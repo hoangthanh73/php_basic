@@ -10,13 +10,14 @@ $numberOdd = null;
 $countEven = 0;
 $countOdd = 0;
 
-for ($i = $startNumber; $i <= $endNumber; $i ++)
-{
-    if ($i % 2 == 0){
-        $numberEven .= $i.' ';$countEven ++;
-    }else{
-        $numberOdd .= $i.' ';$countOdd ++;
+for ($i = $startNumber; $i <= $endNumber; $i++) {
+    if ($i % 2 == 0) {
+        $numberEven .= $i . ' ';
+        $countEven++;
+    } else {
+        $numberOdd .= $i . ' ';
+        $countOdd++;
     }
 }
-echo 'Dãy số từ '.$startNumber.' đến '.$endNumber.' có '.$countEven.' số chẵn: '.$numberEven.'<br/>';
-echo 'Dãy số từ '.$startNumber.' đến '.$endNumber.' có '.$countOdd.' số lẻ: '.$numberOdd;
+echo 'Dãy số từ ' . $startNumber . ' đến ' . $endNumber . ' có ' . $countEven . ' số chẵn: ' . $numberEven . '<br/>';
+echo 'Dãy số từ ' . $startNumber . ' đến ' . $endNumber . ' có ' . $countOdd . ' số lẻ: ' . $numberOdd;
