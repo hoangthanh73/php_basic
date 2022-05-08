@@ -1,14 +1,24 @@
 <?php
-// khai báo biến vói hằng
-$congty = 'takako Việt Nam';
-define ('SDT',123235478);
-echo SDT;
-echo '<br/>';
-echo $congty;
-echo '<br/>';
-if ( $congty == SDT ){echo 'số này sai';}
-else {echo 'Hoàng Minh Thành';}
-echo '<br/>';
-var_dump(isset($congy));
-echo '<br/>';
-var_dump(defined('SDT'));
+// kiểm tra số chẵn số lẻ 
+
+/*function ham_kiem_tra_so($number)
+{
+    if ($number % 2 == 0) {
+        return 'số chẵn';
+    }
+    return 'số lẻ';
+}
+
+echo ham_kiem_tra_so(-2);
+*/
+
+function ham_kiem_tra_so($n)
+{
+    if ($n % 2 == 0) return true;
+}
+
+if (ham_kiem_tra_so(-2)) {
+    echo 'số chẵn';
+} else {
+    echo 'số lẻ';
+}
