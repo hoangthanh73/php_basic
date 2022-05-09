@@ -1,13 +1,58 @@
 <?php
-// bài tập mảng 
+// sắp xếp nổi bọt
 
-$news = array (1, 534,567, 35, 35,64);
+// sắp xếp mảng tăng dần
+$number = array(12, 45, 75, 13, 75, 43);
 
-// tìm số lớn nhất trong 1 mảng
-      //dùng hàm sort sắp xếp các giá trị trong mảng rồi in ra giá trị thứ n - 1 trong mảng đã sắp xếp
-print_r($news[count($news)-1]);
+$sophantu = count($number);
+
+for ($i = 0; $i < $sophantu - 1; $i++) {
+      for ($j = $i + 1; $j < $sophantu; $j++) {
+            if ($number[$j] < $number[$i]) {
+                  $temp = $number[$j];
+                  $number[$j] = $number[$i];
+                  $number[$i] = $temp;
+            }
+      }
+}
+//print_r($number);
+
+// đưa sắp xếp nổi bọt tăng vào hàm
+
+function sap_xep_noi_bot_tang($number)
+{
+      $sophantu = count($number);
+      for ($i = 0; $i < $sophantu - 1; $i++) {
+            for ($j = $i + 1; $j < $sophantu; $j++) {
+                  if ($i > $j) {
+                        $temp = $number[$j];
+                        $number[$j] = $number[$i];
+                        $number[$i] = $temp;
+                  }
+            }
+      }
+      print_r($number);
+      return;
+}
+
+
+// Sắp xếp nổi bọt giảm
+
+function sap_xep_noi_bot_giam($number)
+{
+      for ($i = 0; $i < count($number) - 1; $i++) {
+            for ($j = 1; $j < count($number); $j++) {
+                  if ($j > $i) {
+                        $temp = $number[$j];
+                        $number[$j] = $number[$i];
+                        $number[$i] = $temp;
+                  }
+            }
+      }
+      print_r($number);
+      return;
+}
+
+echo sap_xep_noi_bot_giam($number);
 echo '<br/>';
-//tìm số nhỏ nhất thì ta in ra phần tử thứ 0 của mảng
-print_r ($news[0]);
-
-// tính tổng 1 đến n
+echo sap_xep_noi_bot_tang($number);
