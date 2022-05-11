@@ -13,8 +13,9 @@ function tim_max($solieu)
     return "giá trị lớn nhất là: $max";
 }
 
-echo tim_max($solieu = array(242, 533, 543));
+echo tim_max($solieu = [242, 533, 543]);
 echo '<br/>';
+
 
 function tim_min($solieu)
 {
@@ -27,4 +28,4 @@ function tim_min($solieu)
     }
     return "giá trị min là: $min";
 }
-echo tim_min($solieu = array(234, 54, 56));
+echo tim_min($solieu = [234, 54, 56]);
