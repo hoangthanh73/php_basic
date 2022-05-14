@@ -8,11 +8,8 @@ $sum = null;
 for ($i = 1; $i <= $n; $i++) {
     if ($i % 2 == 0) {
         $numberEven[] = $i;
-        //$sum += $i;
     }
 }
-//echo "tổng là $sum";
-//echo '<br/>';
 echo 'Số chẵn là: ';
 foreach ($numberEven as $key => $val) {
     if ($n - $val <= 1) {
