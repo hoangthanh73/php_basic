@@ -1,4 +1,5 @@
 <?php
+// Bài tập sắp xếp mảng 
 
 $listName = ['Thành' => 23, 'Công' => '24', 'Tiến' => 21, 'Mỹ' => 26];
 
