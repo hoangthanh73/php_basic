@@ -1,0 +1,2 @@
+<?php
+echo ' hoang thanh';
