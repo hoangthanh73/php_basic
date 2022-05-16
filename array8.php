@@ -1,6 +1,6 @@
 <?php
 
-// bài tập: tiimf phần tử thiếu 
+// bài tập: tìm phần tử thiếu 
 /* 
    Bạn Nam đang sắp xếp 2 danh sách A và B giống hệt nhau thành những thứ tự cụ thể. 
    Thật không may là một số đã bị loại khỏi danh sach A.
