@@ -29,5 +29,31 @@ git push
 
 git push origin main
 ```
+
+## Branch
+
+### tạo branch
+
+```
+git checkout -b ten_branch
+```
+
+### chuyển branch
+
+```
+git checkout ten_branch
+```
+### xóa branch
+
+```
+git branch -D ten_branch
+```
+
+### xem danh sách branch
+
+```
+git branch
+```
+
 ## Bài tập
 [danh sách bài tập](https://github.com/hoangthanh73/php_basic/tree/main/exercise)
