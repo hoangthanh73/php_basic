@@ -5,7 +5,7 @@ $staff = [
         'Name' => 'Thành',
         'Age' => 27
     ],
-    11 => 'Lý Ngộ',
+    //11 => 'Lý Ngộ',
     12 => [
         [23, 4, 6],
         [
@@ -13,3 +13,10 @@ $staff = [
         ],
     ]
 ];
+
+foreach ($staff as $key => $value){
+    foreach ($value as $item){
+        echo $item['Name'];
+    }
+    //echo $key .'=>'.$value;
+}
