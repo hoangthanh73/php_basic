@@ -32,6 +32,12 @@ git push origin main
 
 ## Branch
 
+### lấy branch từ remote về máy
+
+```
+git fetch
+```
+
 ### tạo branch
 
 ```

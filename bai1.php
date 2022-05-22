@@ -17,7 +17,7 @@ function ham_kiem_tra_so($n)
     return $n % 2 == 0;
 }
 if (ham_kiem_tra_so(-2)) {
-    echo 'số chẵn. ahihi';
+    echo 'số chẵn';
 } else {
-    echo 'số lẻ. ahehe';
+    echo 'số lẻ';
 }
