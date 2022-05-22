@@ -6,8 +6,7 @@
    cách 2: dùng toán tử '-': lấy số lớn - số nhỏ, 
                             đến khi nào mà phần dư và số còn lại bằng nhau thì phần dư còn lại đó là ước chung lớn nhất
    cách 3: dùng giải thuật euclid
-*/    
-
+*/
 function Boi_chung_nho_nhat($a, $b)
 {
     return ($a * $b);
