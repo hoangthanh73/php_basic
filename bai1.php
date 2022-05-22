@@ -19,5 +19,5 @@ function ham_kiem_tra_so($n)
 if (ham_kiem_tra_so(-2)) {
     echo 'số chẵn. ahihi';
 } else {
-    echo 'số lẻ';
+    echo 'số lẻ. ahaha';
 }
